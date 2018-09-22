@@ -6,7 +6,13 @@ namespace ModVI_Ejercicio1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime fecha = DateTime.Now;
+            Console.WriteLine("Hoy es {0} del mes {1} de {2}", fecha.Day, fecha.Month, fecha.Year);
+            DateTime manyana = fecha.AddDays(1);
+            Console.WriteLine("Manana sera {0}", manyana.Day);
+
+            Console.ReadKey();
+
         }
     }
 }
